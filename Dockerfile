@@ -1,6 +1,6 @@
-ARG BASE_IMAGE_TAG
+ARG tag
 
-FROM node:$BASE_IMAGE_TAG
+FROM node:$tag
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 COPY startup /opt/startup
