@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-var_path=$PWD  
-echo $var_path
-
+# docker tab would be replaced by tag in docker hub
 sed -i 's@{{tag}}@'"${DOCKER_TAG}"'@' Dockerfile
-
-docker build -t ${DOCKER_TAG} .
+docker build -t ${IMAGE_NAME} .
