@@ -1,9 +1,8 @@
-RUN printenv
-RUN $IMAGE_NAME
 FROM node:$IMAGE_NAME
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 RUN printenv
+RUN $IMAGE_NAME
 
 COPY startup /opt/startup
 COPY hostingstart.html /home/site/wwwroot/hostingstart.html
