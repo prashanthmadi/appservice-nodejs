@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 FROM node:8.2.1
+=======
+RUN printenv
+RUN $IMAGE_NAME
+FROM node:$IMAGE_NAME
+>>>>>>> Stashed changes
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 RUN printenv
