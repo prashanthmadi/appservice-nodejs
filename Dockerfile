@@ -1,8 +1,8 @@
 FROM node:{{tag}}
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
-CMD pwd
-CMD ls
+RUN echo $PWD
+RUN echo $ls
 COPY startup /opt/startup
 COPY hostingstart.html /home/site/wwwroot/hostingstart.html
 COPY sshd_config /etc/ssh/
