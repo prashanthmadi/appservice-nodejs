@@ -1,5 +1,4 @@
-ARG IMAGE_NAME
-FROM node:$IMAGE_NAME
+FROM node:{{tag}}
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 RUN printenv
