@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-cat Dockerfile | sed 's@{{tag}}@'"${DOCKER_TAG}"'@' | docker build -t ${DOCKER_TAG} .
+var_path=$PWD  
+echo $var_path
+
+cat Dockerfile | sed 's@{{tag}}@'"${DOCKER_TAG}"'@' | docker build -t ${DOCKER_TAG} -
