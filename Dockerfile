@@ -1,7 +1,7 @@
-ARG tag
-
-FROM node:$tag
+FROM node:8.2.1
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
+
+RUN printenv
 
 COPY startup /opt/startup
 COPY hostingstart.html /home/site/wwwroot/hostingstart.html
