@@ -1,3 +1,4 @@
+ARG IMAGE_NAME
 FROM node:$IMAGE_NAME
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
