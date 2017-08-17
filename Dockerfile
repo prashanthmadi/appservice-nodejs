@@ -1,3 +1,5 @@
+ARG DOCKER_TAG
+FROM node:$DOCKER_TAG
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 COPY startup /opt/startup
