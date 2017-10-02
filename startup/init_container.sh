@@ -1,5 +1,7 @@
-#!/usr/bin/env bash
+'#!/usr/bin/env bash
 service ssh start
+
+printenv
 
 mkdir "$PM2HOME"
 chmod 777 "$PM2HOME"
